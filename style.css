@@ -1,0 +1,153 @@
+/* General Reset and Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #3a3a3a);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    max-width: 600px;
+    width: 95%;
+  }
+  
+  /* Header */
+  h1 {
+    color: #f9f9f9;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  
+  /* Button Layout */
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Common Button Styles */
+  button,
+  label.custom-upload,
+  #download-video {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 140px;
+  }
+  
+  label.custom-upload {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  label.custom-upload:hover {
+    background-color: #0056b3;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .clear-btn {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .clear-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  #play-reverse {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+  #play-reverse:hover {
+    background-color: #e33e3e;
+  }
+  
+  #play-normal {
+    background-color: green;
+    color: white;
+  }
+  
+  #play-normal:hover {
+    background-color: greenyellow;
+    color: black;
+  }
+  
+  #download-video {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #download-video:hover {
+    background-color: #218838;
+  }
+  
+  /* Video and Canvas */
+  video,
+  canvas {
+    width: 640px;
+    height: 360px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Loading Text */
+  #loading-message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffc107;
+    display: none;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    button,
+    label.custom-upload,
+    #download-video {
+      font-size: 13px;
+      padding: 6px 10px;
+      min-width: 100px;
+    }
+  
+    video,
+    canvas {
+      height: auto;
+    }
+  }
+  

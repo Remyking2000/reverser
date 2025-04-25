@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reverse Video SlideShow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Reverse Video SlideShow</h1>
+
+    <!-- Upload and Clear buttons -->
+    <div class="button-row">
+      <button id="clear-video" class="clear-btn">Clear</button>
+      <label class="custom-upload">
+        <span>Upload</span>
+        <input type="file" name="video-Upload" accept="video/*" multiple />
+      </label>
+    </div>
+
+    <!-- Video / Canvas Display -->
+    <div>
+      <video id="video" controls></video>
+      <canvas id="canvas" style="display: none;"></canvas>
+      <p id="loading-message">⏳ Processing video frames...</p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="button-row">
+      <button id="play-reverse">Play Reverse</button>
+      <button id="play-normal" style="display: none;">Play Normally</button>
+      <a id="download-video" style="display: none;">Download Reverse</a>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
